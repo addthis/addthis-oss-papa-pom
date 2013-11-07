@@ -83,6 +83,7 @@
           <version>2.4.1</version>
           <configuration>
             <stagingRepository>${at.repo.releases.id}::default::${at.repo.releases.url}</stagingRepository>
+            <tagNameFormat>v@{project.version}</tagNameFormat>
           </configuration>
         </plugin>
       </plugins>
