@@ -1,0 +1,47 @@
+# addthis-oss-papa-pom
+
+## XML
+
+A
+[parent pom](http://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
+allows various defaults to be specified so that each individual
+project does not repeat itself.  This pom is the base of the AddThis open
+source pom hierarchy.
+
+While it is hoped that this is useful for projects hosted at
+<http://github.com/addthis> and an illustrative general example, it is not
+intended to be a totally generic open source project pom.
+
+## Setup
+
+To inherit from this in your project just specify it at the top of the
+`pom.xml`:
+
+```xml
+<parent>
+  <groupId>com.addthis.common.build.maven.pom</groupId>
+  <artifactId>papa-pom</artifactId>
+  <version> ... current pom release version ...</version>
+</parent>
+```
+
+If you want to deploy to remote repositories such as
+[Sonatype OSS](https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide)
+or one internal to your organization you will need to customize
+`settings.xml`.  That includes the `at.repo.*` properties and any
+necessary credentials.
+
+## Administrative
+
+### Versioning
+
+It's x.y.z where:
+
+ * x: something major happened
+ * y: next release
+ * z: bug fix only
+
+### License
+
+addthis-oss-papa-pom is released under the Apache License Version 2.0.  See
+[Apache](http://www.apache.org/licenses/LICENSE-2.0) or the LICENSE for details.
