@@ -106,7 +106,9 @@
   </organization>
 
   <developers>
-    <name>AddThis and Contributors</name>
+    <developer>
+      <name>AddThis and Contributors</name>
+    </developer>
   </developers>
 
 </project>
