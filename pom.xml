@@ -39,6 +39,8 @@
     <project.report.outputEncoding>UTF-8</project.report.outputEncoding>
     <project.report.inputEncoding>UTF-8</project.report.inputEncoding>
 
+    <at.release.allowTimestampedSnapshots>false</at.release.allowTimestampedSnapshots>
+
     <!-- dist management -->
     <at.repo.releases.id>sonatype-nexus-staging</at.repo.releases.id>
     <at.repo.releases.url>https://oss.sonatype.org/service/local/staging/deploy/maven2</at.repo.releases.url>
@@ -83,6 +85,7 @@
           <artifactId>maven-release-plugin</artifactId>
           <version>2.4.2</version>
           <configuration>
+            <allowTimestampedSnapshots>${at.release.allowTimestampedSnapshots}</allowTimestampedSnapshots>
             <stagingRepository>${at.repo.releases.id}::default::${at.repo.releases.url}</stagingRepository>
             <tagNameFormat>v@{project.version}</tagNameFormat>
           </configuration>
