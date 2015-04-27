@@ -83,7 +83,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-release-plugin</artifactId>
-          <version>2.5</version>
+          <version>2.5.2</version>
           <configuration>
             <allowTimestampedSnapshots>${at.release.allowTimestampedSnapshots}</allowTimestampedSnapshots>
             <stagingRepository>${at.repo.releases.id}::default::${at.repo.releases.url}</stagingRepository>
